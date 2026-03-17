@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"http://mini3-pocketbase-2ede60-194-233-73-98.traefik.me/api/collections\" -H \"Content-Type: application/json\" 2>/dev/null | head -200)",
+      "Bash(curl -v -X POST \"http://mini3-pocketbase-2ede60-194-233-73-98.traefik.me/api/admins/auth-with-password\" \\\\\n  -H \"Content-Type: application/json\" \\\\\n  -d '{\"identity\":\"hulda23@gmail.com\",\"password\":\"jm9vzvb5rnztijddvnukotosbk4z8gd3\"}' 2>&1 | tail -20)",
+      "Bash(TOKEN=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2xsZWN0aW9uSWQiOiJwYmNfMzE0MjYzNTgyMyIsImV4cCI6MTc3Mzc1NDU4NywiaWQiOiI0M2dtcXVqNWlzeGQzZDgiLCJyZWZyZXNoYWJsZSI6dHJ1ZSwidHlwZSI6ImF1dGgifQ.5mW6VEvRRIA0YmLF9Fj5ATyZQQ6zN77VNkMx0uwH2CI\" && \\\\\ncurl -s \"http://mini3-pocketbase-2ede60-194-233-73-98.traefik.me/api/collections\" \\\\\n  -H \"Authorization: $TOKEN\" | python -m json.tool 2>/dev/null)",
+      "Bash(cd \"C:/Vibe/Study/Live/Board\" && npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack 2>&1)",
+      "Read(//c/Vibe/Study/Live/**)",
+      "Bash(npx create-next-app@latest live-board --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(cd \"C:/Vibe/Study/Live\" && echo \"n\" | npx create-next-app@latest live-board --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack 2>&1)",
+      "Bash(# Move contents from live-board to Board \\(keeping .claude files\\)\ncp -r \"C:/Vibe/Study/Live/live-board/\"* \"C:/Vibe/Study/Live/Board/\" 2>/dev/null\ncp -r \"C:/Vibe/Study/Live/live-board/\".gitignore \"C:/Vibe/Study/Live/Board/\" 2>/dev/null\ncp -r \"C:/Vibe/Study/Live/live-board/\".eslintrc* \"C:/Vibe/Study/Live/Board/\" 2>/dev/null\ncp -r \"C:/Vibe/Study/Live/live-board/\"node_modules \"C:/Vibe/Study/Live/Board/\" 2>/dev/null\nrm -rf \"C:/Vibe/Study/Live/live-board\"\nls \"C:/Vibe/Study/Live/Board/\")"
+    ]
+  }
+}
