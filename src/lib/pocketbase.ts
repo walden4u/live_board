@@ -1,12 +1,8 @@
 import PocketBase from 'pocketbase';
 
-// 브라우저에서는 Next.js 프록시(/pb)를 통해 접근
-// 서버에서는 내부 URL 또는 환경변수 사용
-const url = typeof window !== 'undefined'
-  ? '/pb'
-  : (process.env.POCKETBASE_INTERNAL_URL || process.env.NEXT_PUBLIC_POCKETBASE_URL || 'http://pocketbase:8090');
-
-const pb = new PocketBase(url);
+// 항상 /pb 프록시를 통해 접근 (브라우저/서버 모두)
+// 서버에서는 next.config.ts의 rewrite가 /pb → http://pocketbase:8090으로 변환
+const pb = new PocketBase('/pb');
 
 pb.autoCancellation(false);
 
